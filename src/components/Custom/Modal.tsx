@@ -3,11 +3,9 @@ import React from "react";
 const Modal = ({
   children,
   visible,
-  setVisible,
 }: {
   children: React.ReactNode;
   visible: boolean;
-  setVisible?: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
     visible && (

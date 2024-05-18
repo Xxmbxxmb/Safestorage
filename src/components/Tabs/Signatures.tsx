@@ -1,6 +1,5 @@
 import React from "react";
 import Text from "../Custom/Text";
-import { toast } from "react-toastify";
 
 const Signatures = ({
   txSignatures,

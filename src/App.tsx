@@ -39,7 +39,7 @@ interface TabsParameters {
 function App() {
   const [activeTab, setActiveTab] = useState<Tabs>(Tabs.TRANSFER);
   const [showHash, setShowHash] = useState<boolean>(false);
-  const { isGuardian, isOwner, guardians, walletAddress } = useWeb3Context();
+  const { isGuardian, isOwner } = useWeb3Context();
 
   const tabs: TabsParameters[] = [
     {

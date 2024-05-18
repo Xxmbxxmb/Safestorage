@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Modal from "./Modal";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import Button from "./Button";

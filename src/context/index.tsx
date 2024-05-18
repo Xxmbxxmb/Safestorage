@@ -3,8 +3,8 @@ import { ABI, CONTRACT_ADDRESS } from "../contract";
 import { BrowserProvider, JsonRpcSigner, Contract } from "ethers";
 import { Token } from "../types/token";
 import axios, { AxiosResponse } from "axios";
-import Web3Modal from "web3modal";
 import { GetParams } from "../utils/onboard";
+import Web3Modal from "web3modal";
 
 export interface ErrorMessage {
   status: boolean;

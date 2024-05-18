@@ -19,13 +19,11 @@ const TokenSelector = ({ amount, onlyToken, setAmount }: TokenSelectorProps) => 
   const [search, setSearch] = useState<string>("");
   const [visible, setVisible] = useState<boolean>(false);
 
-  const [disabled, setDisabled] = useState(false);
-
   return (
     <div style={{ marginBottom: 10, width: "100%" }}>
       <div className="flex flex-row w-full" style={{ marginBottom: 4 }}>
         <>
-          <Modal visible={visible} setVisible={setVisible}>
+          <Modal visible={visible}>
             <div className="bg-gray-900/80 w-full h-full flex justify-center items-center">
               {/* centered container */}
               <div className="max-w-md w-full max-h-[350px] h-full border border-gray-600 bg-gray-800 rounded-lg space-y-4 py-4 overflow-y-auto">
@@ -104,7 +102,7 @@ const TokenSelector = ({ amount, onlyToken, setAmount }: TokenSelectorProps) => 
               <div
                 style={{ height: 42 }}
                 className={`flex flex-row w-full items-center space-x-2 px-4 rounded-l-lg ${
-                  disabled ? "bg-gray-600/80" : "bg-gray-600"
+                  loading ? "bg-gray-600/80" : "bg-gray-600"
                 } ${onlyToken ? "rounded-r-lg" : ""}`}
               >
                 <TokenImage
@@ -118,7 +116,7 @@ const TokenSelector = ({ amount, onlyToken, setAmount }: TokenSelectorProps) => 
               <div
                 style={{ height: 42 }}
                 className={`flex w-full flex-row items-center space-x-2 px-4 rounded-l-lg ${
-                  disabled ? "bg-gray-600/80" : "bg-gray-600"
+                  loading ? "bg-gray-600/80" : "bg-gray-600"
                 } ${onlyToken ? "rounded-r-lg" : ""}`}
               >
                 <Text>Select Token</Text>
