@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useWeb3Context } from "../../context";
 import Text from "../Custom/Text";
 import { ethers } from "ethers";
@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 const RemoveGuardian = () => {
   const { loading, contract, setLoading, setError } = useWeb3Context();
   const [address, setAddress] = useState<string>("");
-  const [index, setIndex] = useState<number>(0);
+  const [index, setIndex] = useState<number>(-1);
   const [guardians, setGuardians] = useState<string[]>([]);
 
   const removeGuardian = async () => {

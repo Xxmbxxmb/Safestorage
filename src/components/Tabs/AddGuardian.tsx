@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Input from "../Custom/CustomInput";
 import { useWeb3Context } from "../../context";
 import Text from "../Custom/Text";
 
 const AddGuardian = () => {
-  const { loading, contract, setLoading, setError } = useWeb3Context();
+  const { loading, contract, setError } = useWeb3Context();
   const [address, setAddress] = useState<string>("");
   const [guardians, setGuardians] = useState<string[]>([]);
   const [index, setIndex] = useState<number>(-1);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TokenSelector from "../TokenSelector/TokenSelector";
 import { useWeb3Context } from "../../context";
 import Text from "../Custom/Text";
